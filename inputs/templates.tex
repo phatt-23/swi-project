@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Quick Access Templates  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% NUMBERLINE
+\begin{center}
+    \begin{tikzpicture}[scale=2.0]
+        \draw[very thick] (1,0) -- (2,0);
+        \path[draw=black, fill=black] (1,0) circle (2pt);
+        \path[draw=black, fill=white, thick] (2,0.0) circle (2pt);
+        \draw[latex-latex] (-3.5,0) -- (3.5,0) ;
+        \foreach \x in {-3,-2,-1,0,1,2,3}
+        \draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+        \foreach \x in {-3,-2,-1,0,1,2,3}
+        \draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+        {$\x$};
+    \end{tikzpicture}
+\end{center}
+
+%%% Function plot
+\begin{center}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines=middle,
+            restrict x to domain=-6:6,
+            restrict y to domain=-10:20,
+            xmin=-6.5,
+            xmax=6.5, 
+            ymin=-5.5,
+            ymax=10.5, 
+            xlabel=$x$,
+            ylabel=$y$,
+            title=The function $f(x)$ and its deriavative $f'(x)$,
+            % xticklabel style={anchor=south west},
+            xtick={-6, -4, -2, 1, 15/8, 3, 4, 6},
+            xticklabels={$-6$, $-4$, $-2$, $1$, $\frac{15}{8}$, $3$, $4$, $6$},
+            xmajorgrids=true,
+        ]
+        % \begin{axis}[xmin=-10, xmax=10, ymin=-10, ymax=10, axis lines = middle]
+            \addplot[blue, samples=100]{(5 - 2*x)*(x^3)}
+            node[right, pos=0.55]{$f(x) = (5 - 2x)3^{3}$};
+            \addplot[red, samples=100]{(x^2)*(-8*x + 15)} 
+            node[left, pos=0.18]{$f'(x) = x^{2}(-8x + 15)$};
+        \end{axis}
+    \end{tikzpicture}
+\end{center}
+
+%%% Function plot using \foreach loop
+
+\begin{tikzpicture}
+    \begin{axis}[
+        axis lines=middle,
+        samples=500,
+        restrict x to domain=-4:4,
+        restrict y to domain=-10:10,
+        xlabel=$x$,
+        ylabel=$y$,
+        xmin=-3.5,
+        xmax=3.5,
+        ymin=-4.5,
+        ymax=10.5,
+        xmajorgrids=true,
+        ymajorgrids=true,
+    ]
+    \foreach \COLOR/\EXPR/\LABEL/\POS/\LR in { 
+        Green / { (5-(2*x))*(x^3) } / $f(x)$  / 0.6 / right, 
+        Blue  / { (15-8*x)*x^2 }    / $f'(x)$ / 0.1 / left
+    } 
+    {
+        \edef\temp{
+            \noexpand\addplot[line width=2pt,color=\COLOR]{\EXPR}
+            node[\LR,pos=\POS]{\LABEL};
+        }
+        \temp
+    } 
+    \end{axis}
+\end{tikzpicture}
+
+                            % \edef is expandable definition. 
+                            % this will expand all the contents first.
+                            % \noexpand unsures that the function \addplot
+                            % is not executed until macro \temp.
+
+%%% Function graph plotting using table and python
+\begin{tikzpicture}[scale=1.5]
+    \begin{axis}[
+        axis lines=middle,
+        xlabel=$x$,
+        ylabel=$y$,
+        xmin=-0.007,        % Remember to adjust the dimensions
+        xmax=0.007,
+        ymin=-1.7,
+        ymax=1.7,
+        xmajorgrids=true,
+        ymajorgrids=true,
+        raw gnuplot,
+    ]
+    \foreach \COLOR/\PATH/\LR/\POS/\LABEL in {
+        Green /{tables/table_1/plot_data.txt}/ right / 0.9 / {$f(x)$}
+    } {
+        \edef\temp{
+            \noexpand\addplot[line width=2pt, color=\COLOR] 
+            table[x index=0, y index=1]{\PATH}
+            node[\LR,pos=\POS]{\LABEL};
+        }\temp
+    }
+    \end{axis}
+\end{tikzpicture}  
+                            % COLOR /{PATH}/ LR / POS / LABEL
+                            % {PATH} the path can't have separaters
+
+%%% Node arrow in a graph
+\node (src) at (axis cs: <x>,<y>)  {\LABEL};
+\node (dest) at (axis cs: <x>,<y>)  {\textbullet};
+\draw[line width=1.2pt, ->, shorten>=-5pt, shorten <= -3pt]
+(src)--(dest);

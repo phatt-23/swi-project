@@ -1,0 +1,66 @@
+\section{Konkrétní implementace UC}
+\raggedright
+\sloppy
+    \subsection{Use Case: Place Order}
+
+	\begin{itemize}[itemsep=0pt]
+        \item \textbf{\textit{Název:}} Umístění objednávky
+        \item \textbf{\textit{Kontext:}} Zákazník používá mobilní aplikaci nebo webové rozhraní pro objednávání jídla.
+        \item \textbf{\textit{Level zanoření Use Case:}} Primární Use Case
+    	\item \textbf{\textit{Aktéři:}} Zákazník
+        \item \textbf{\textit{Stakeholdeři a~zájmové osoby:}} Zákazník, restaurace, doručovatel
+        \item \textbf{\textit{Vstupní podmínky:}} Zákazník je přihlášený do svého účtu a~má vybrané produkty~objednání.
+        \item \textbf{\textit{Výstupní podmínky:}} Objednávka je úspěšně umístěna a~zobrazeno potvrzení.
+        \item \textbf{\textit{Minimální výstup:}} Zákazníkova objednávka je zaznamenána v~systému.
+        \item \textbf{\textit{Ideální výstup:}} Zákazník obdrží potvrzení o~úspěšném umístění objednávky a~zobrazení očekávaného času doručení.
+        \item \textbf{\textit{Hlavní scénář:}}
+			\begin{enumerate}[topsep=0pt]
+            	\item Zákazník vybere položky a~přidá je do košíku.
+            	\item Zákazník dokončí objednávku a~přejde~platbě.
+            	\item Systém zpracuje objednávku a~zobrazí potvrzení.
+			\end{enumerate}
+        \item \textbf{\textit{Rozšíření:}} Pokud zákazník zruší objednávku, přejde do scénáře "Customer: Cancel Order".
+	\end{itemize}
+
+    \subsection{Use Case: Cancel Order}
+	
+	\begin{itemize}[itemsep=0pt]
+        \item \textbf{\textit{Název:}} Zrušení objednávky
+        \item \textbf{\textit{Kontext:}} Zákazník se rozhodl zrušit již umístěnou objednávku.
+        \item \textbf{\textit{Level zanoření Use Case:}} Primární Use Case, Rozšíření hlavního scénáře "Place Order"
+        \item \textbf{\textit{Aktéři:}} Zákazník
+        \item \textbf{\textit{Stakeholdeři a~zájmové osoby:}} Zákazník, restaurace, doručovatel
+        \item \textbf{\textit{Vstupní podmínky:}} Objednávka již byla umístěna zákazníkem.
+        \item \textbf{\textit{Výstupní podmínky:}} Objednávka je zrušena a~zákazník obdrží potvrzení.
+        \item \textbf{\textit{Minimální výstup:}} Objednávka je označena jako zrušená v~systému.
+        \item \textbf{\textit{Ideální výstup:}} Zákazník obdrží potvrzení o~úspěšném zrušení objednávky.
+        \item \textbf{\textit{Hlavní scénář:}}
+			\begin{enumerate}[topsep=0pt]
+            	\item Zákazník vybere již umístěnou objednávku~zrušení.
+            	\item Zákazník potvrdí zrušení objednávky.
+            	\item Systém zaznamená zrušení objednávky a~zobrazí potvrzení.
+			\end{enumerate}
+        \item \textbf{\textit{Rozšíření:}} Pokud zákazník zruší objednávku, systém oznámí restauraci a~případně doručovateli o~zrušení.
+	\end{itemize}
+
+    \subsection{Use Case: Show Orders}
+	\begin{itemize}[itemsep=0pt]
+        \item \textbf{\textit{Název:}} Zobrazení objednávek
+        \item \textbf{\textit{Kontext:}} Restaurace přistupuje~systému pro zobrazení nových objednávek.
+        \item \textbf{\textit{Level zanoření Use Case:}} Primární Use Case
+        \item \textbf{\textit{Aktéři:}} Restaurace
+        \item \textbf{\textit{Stakeholdeři a~zájmové osoby:}} Restaurace, zákazník, doručovatel
+        \item \textbf{\textit{Vstupní podmínky:}} Restaurace je přihlášena do svého účtu a~má přístup~systému.
+        \item \textbf{\textit{Výstupní podmínky:}} Restaurace má přehled o~nových objednávkách a~může je zpracovat.
+        \item \textbf{\textit{Minimální výstup:}} Restaurace vidí seznam nových objednávek.
+        \item \textbf{\textit{Ideální výstup:}} Restaurace má přehled o~nových objednávkách a~může je ihned zpracovat.
+        \item \textbf{\textit{Hlavní scénář:}}
+			\begin{enumerate}[topsep=0pt]
+            	\item Restaurace se přihlásí do systému a~přejde do sekce zobrazení objednávek.
+            	\item Systém zobrazí seznam nových objednávek.
+            	\item Restaurace vybere objednávku~zpracování.
+			\end{enumerate}
+        \item \textbf{\textit{Rozšíření:}} Pokud restaurace přijme objednávku, oznámí zákazníkovi, že objednávka je v~procesu.
+	\end{itemize}
+
+\pagebreak

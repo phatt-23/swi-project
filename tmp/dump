@@ -1,0 +1,84 @@
+Funkčnost (Functionality - F)
+
+    Správa Restaurací:
+        Možnost registrovat nové restaurace a spravovat existující profily.
+        Umožnění restauracím aktualizovat své menu, otevírací doby a další důležité informace.
+        Sledování a správa dostupnosti jednotlivých položek v menu.
+
+    Správa Uživatelských Účtů:
+        Možnost registrovat se jako zákazník nebo doručovatel.
+        Správa osobních údajů uživatelů, včetně jména, adresy a platebních informací.
+
+    Zpracování Objednávek:
+        Možnost zákazníků objednat jídlo a sledovat stav jejich objednávek.
+        Komunikace mezi restauracemi a zákazníky ohledně stavu objednávek.
+
+    Správa Doručení:
+        Přiřazení doručovatelů k objednávkám a sledování jejich aktivity.
+        Aktualizace stavu doručení v reálném čase pro uživatele.
+
+    Zpracování Plateb:
+        Podpora různých platebních metod pro zákazníky.
+        Bezpečné a spolehlivé zpracování platebních transakcí.
+
+Vhodnost k použití (Usability - U)
+
+    Uživatelské Rozhraní:
+        Přehledné a intuitivní webové rozhraní pro snadnou navigaci zákazníků.
+        Možnost přepnutí do tmavého režimu pro pohodlné používání v různých světelných podmínkách.
+        Konzistentní design napříč celým systémem pro uživatelskou přívětivost.
+
+    Jazyková Lokalizace:
+        Webová aplikace bude dostupná v českém jazyce pro snadnou orientaci českých uživatelů.
+
+Spolehlivost (Reliability - R)
+
+    Dostupnost Systému:
+        Zajištění konstantní dostupnosti systému pro zákazníky i restaurace pomocí load balancerů a serverových farm.
+
+    Zálohy Dat:
+        Pravidelné zálohování dat pro minimalizaci rizika ztráty informací.
+
+Výkon (Performance - P)
+
+    Zvládnutí Zátěže:
+        Schopnost systému zpracovat až 200 současných připojení uživatelů.
+        Rychlá odezva systému s dobou odezvy do 5 sekund od odeslání požadavku.
+
+    Efektivní Zpracování Dat:
+        Optimalizované vyhledávání relevantních dat v databázi s možností listování a omezeným načítáním dat pro minimalizaci zpoždění.
+
+Schopnost údržby (Supportability - S)
+
+    Podpora Různých Platform:
+        Zajištění funkčnosti webové aplikace na desktopových i mobilních zařízeních s operačními systémy Windows, Linux, iOS a Android.
+
+    Testovací Prostředí:
+        Možnost testovat novou funkcionalitu a opravy chyb v prostředí, které není v produkci, pro minimalizaci rizika výpadků.
+
+    Aktualizace a Rozvoj:
+        Nutnost pravidelných aktualizací a rozvoje webové aplikace zejména s ohledem na kyberbezpečnostní hrozby a požadavky uživatelů.
+
+ %    \subsection{Výpadek platební brány}
+	%  Pokud dojde k výpadku platební brány v důsledku technického selhání, přetížení sítě nebo útoku, mohou být uživatelé neschopni provést platbu za objednané jídlo. To může vést k nedokončeným objednávkám, ztrátě příjmů pro provozovatele systému a zneužití důvěry zákazníků.
+
+ %    \subsection{Nedostupnost restaurací nebo jídel}
+	% Pokud některé restaurace nejsou dostupné nebo mají omezené množství nabízených jídel v důsledku vysoké poptávky, mohou uživatelé čelit frustraci a zklamání. To může vést k ztrátě důvěry v systém a přesunu k jiným konkurenčním platformám pro objednávání jídla.
+
+ %    \subsection{Technické problémy s navigací doručovatelů} 
+	% Pokud doručovatelé nemají přesně definované trasy nebo se setkají s technickými problémy ve svých navigačních systémech, mohou doručení objednávek zpozdit nebo zcela selhat. To může vést k nespokojenosti zákazníků a snížení spokojenosti se službou online food delivery.
+
+ %    \subsection{Výpadky webové aplikace} 
+	% Pokud dojde k výpadku webové aplikace z důvodu technického selhání serverů nebo síťových problémů, může to vést k nedostupnosti služeb pro zákazníky i doručovatele. Pro minimalizaci dopadu by měla být implementována redundantní infrastruktura s automatickým přepínáním na záložní servery a pravidelně testována.
+
+ %    \subsection{Bezpečnostní incidenty}
+	% Útoky hackerských skupin nebo zneužití uživatelských účtů mohou ohrozit integritu dat a důvěrnost osobních informací uživatelů. Je nezbytné mít robustní zabezpečení systému, včetně šifrování dat, dvoufaktorové autentizace a sledování neobvyklých aktivit. V případě bezpečnostního incidentu by měl být okamžitě spuštěn plán pro zajištění integrity dat a ochranu proti dalším útokům.
+
+ %    \subsection{Technické problémy s platebními bránami} 
+	% Jestliže dojde k nefunkčnosti platebního systému nebo chybě při zpracování plateb, může to způsobit ztrátu důvěry uživatelů a finanční ztráty pro firmu. Pro minimalizaci rizika by měly být používány spolehlivé platební brány s redundantními zálohami a automatizované procesy pro řešení chyb.
+
+ %    \subsection{Nedostatečná dostupnost doručovatelů}
+	% Pokud není k dispozici dostatečný počet doručovatelů v konkrétní lokalitě nebo pokud doručovatelé nejsou schopni splnit objednávky včas, může to vést k nespokojenosti zákazníků a ztrátě obchodu. Je důležité mít efektivní systém pro správu doručovatelů, včetně plánování tras, monitorování jejich dostupnosti a řešení případných problémů v reálném čase.
+
+ %    \subsection{Významné chyby v aplikaci}
+	% Pokud dojde k významné chybě ve funkčnosti aplikace, jako je nesprávné zobrazení cen, nedostupnost objednaného jídla nebo chyby v procesu objednávání, může to vést k frustraci uživatelů a ztrátě důvěry v systém. Je nezbytné mít efektivní mechanismy pro detekci a opravu chyb v aplikaci, včetně pravidelných aktualizací a testování nových funkcí před jejich nasazením do produkčního prostředí.

@@ -1,0 +1,61 @@
+%%%%%%%%%%%%%%%%%%%%%
+%%   The Preamble  %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,theorem,amssymb,mathtools}
+\usepackage{array, multirow}
+\usepackage[svgnames]{xcolor}
+\usepackage{pgfplots}
+\usepackage{bm}                     % for bold math expressions
+\usepackage{etoolbox}               % for the setcounter
+\usepackage{xifthen}
+\usepackage[
+    tmargin=2cm,
+    rmargin=1in,
+    lmargin=1in,
+    margin=0.85in,
+    bmargin=2cm,
+    footskip=0.4in
+]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{verbatim}
+\usepackage{babel}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{atveryend}
+\usepackage[super]{nth}
+\usepackage{tcolorbox}
+\usepackage{pgfkeys}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{hyphenat}
+
+\fancypagestyle{mycustomstyle}{
+    \fancyhf{}                                      % clear header and footer
+    \fancyhead[L]{\nouppercase{\leftmark}}          % section name on the left
+    \fancyhead[R]{\thepage}                         % page number on the right
+    \renewcommand{\headrulewidth}{0.4pt}            % add a rule below the header
+    \renewcommand{\footrulewidth}{0.4pt}            % add rule above the footer
+    \fancyfoot[C]{\emph{\textcircled{phatt}}}       % centered text in the footer
+    \fancyfoot[R]{Strana \thepage\ z \pageref{LastPage}} 
+    % page number on the right side of the footer
+}
+\setlength{\headheight}{15pt}
+
+\usetikzlibrary{arrows}
+\pgfplotsset{compat=1.9, width=10cm}
+
+\setlength{\tabcolsep}{18pt}                        % sets a wider white-space in the table box 
+\renewcommand{\arraystretch}{1.5}                   % sets a taller white-space in the table box
+\setlength{\arrayrulewidth}{0.3mm}                  % sets the thickness of the borders
+
+\definecolor{gre}{RGB}{101, 191, 127}
+\definecolor{gree}{RGB}{7, 135, 44}
+
+

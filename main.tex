@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+
+\input{inputs/preamble}
+\input{inputs/macros}
+\includeonly{
+    sections/title.tex,
+    sections/toc.tex,
+    sections/changes.tex,
+    sections/intro.tex,
+    sections/modules.tex,
+    sections/furps.tex,
+    sections/critsit.tex,
+    sections/bounds.tex,
+    sections/envctxt.tex,    
+    sections/chractenv.tex,
+    sections/usecasedia.tex,
+    sections/scenarios.tex
+}
+
+\begin{document}
+    % Title Page
+    \input{sections/title.tex}
+    % Tale of Contents
+    \input{sections/toc.tex}
+    % Log of Changes
+    \input{sections/changes.tex}
+    % Proposal
+    \input{sections/intro.tex}
+    % List of Modules
+    \input{sections/modules.tex}
+    % FURPS
+    \input{sections/furps.tex}
+    % Critical Situations
+    \input{sections/critsit.tex}
+    % Three Situations Defining Boundaries
+    \input{sections/bounds.tex}
+    % Characteristic of Actors and Enviroment
+    \input{sections/chractenv.tex}
+    % Enviroment Context
+    \input{sections/envctxt.tex}
+    % Use Case Diagram
+    \input{sections/usecasedia.tex}
+    % Scenarios
+    \input{sections/scenarios.tex}
+\end{document}
+

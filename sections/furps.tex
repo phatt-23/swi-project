@@ -1,0 +1,74 @@
+\section{Systémové požadavky - \textit{FURPS}}
+	\sloppy
+	V této sekci se zaměříme na výčet klíčových systemových požadavků
+	ve formě jednoduchých formulací. Tento seznam vychází z~akronymu 
+	FURPS, metoda sloužící jako standardní způsob pro definici dimenzí kvalit,
+	kterých by se měl vyvíjený software snažit dosáhnout. 
+
+	\subsection{Funkčnost - Funtionality}
+
+	Tato sekce se zaměruje na to, co by náš systém měl být schopnen provádět a~jaké operace by měl umožňovat.
+
+	\begin{enumerate}[noitemsep,topsep=0pt]
+		\item Systém musí umožnit uživatelům vytvořit si účet jako zákazník nebo doručovatel.
+		\item Systém musí poskytovat možnost přihlášení do uživatelských profilů.
+		\item Zákazníci by měli mít možnost prohlížet detailní informace o~jednotlivých jídlech, včetně popisu, cen a~dostupných variant.
+		\item Uživatelé musí mít možnost provádět objednávky prostřednictvím systému.
+		\item Doručovatelé by měli mít možnost přijmout nebo odmítnout objednávku na základě dostupnosti a~geografického umístění.
+		\item Systém by měl správu profilů restaurací, včetně úpravy menu a~otevíracích hodin.
+		\item Systém musí umožnit sledování stavu objednávek jak zákazníkům, tak doručovatelům.
+		\item Systém musí zahrnovat evidenci historie objednávek, včetně informací o~doručení a~platbě.
+		\item Pro zlepšení zážitku uživatelů by měl systém nabízet personalizovaná doporučení jídel na základě historie objednávek.
+		\item Systém by měl poskytovat možnost zákazníkům hodnotit a~recenzovat jednotlivá jídla a~restaurace.
+		\item Systém musí být navržen tak, aby podporoval decentralizovaný model provozu.
+	\end{enumerate}
+
+	\subsection{Vhodnost k~použití - Usability}  
+
+	V této sekci se zkoumá, jak snadno a~pohodlně mohou uživatele
+	interagovat se systémem. 
+
+	\begin{enumerate}[noitemsep,topsep=0pt]
+		\item Aplikace musí být přehledná, responzivní a~snadno ovladatelná.
+    	\item Aplikace musí umožňovat snadnou navigaci a~vyhledávání restaurací a~jídel.
+    	\item Nabídka restaurací a~jídel by měla být prezentována atraktivním a~přehledným způsobem.
+    	\item Aplikace by měla být navržena tak, aby byla intuitivní a~snadno ovladatelná pro uživatele různého věku a~technické gramotnosti.
+    	\item Aplikace by měla být dostupná nejen v~českém jazyce, ale i~cizích jazicích pro větší přístupnost uživatelů.
+    	\item Uživatel by měl mít možnost přepínání mezi světlým a~tmavým režimem pro pohodlné používání v~různých podmínkách osvětlení.
+    \end{enumerate}
+
+	\subsection{Spolehlivost - Reliability}
+
+	Tento oddíl se zaměřuje na stabilitu a~spolehlivost systému za různých podmínek provozu. 
+
+	\begin{enumerate}[noitemsep,topsep=0pt]
+    	\item Systém musí být vždy dostupný pro zaměstnance a~uživatele s~využitím load balancerů a~serverových farm.    	
+		\item Pro zajištění nepřetržité dostupnosti by měly být veškeré operace monitorovány a~spravovány systémem sledování výkonu a~chyb.
+    	\item Pro zajištění spolehlivosti musí být prováděny pravidelné zálohy dat.
+		\item Systém musí být odolný vůči neočekávaným výpadkům a~selháním jednotlivých uzlů v~decentralizované síti a~měl by automaticky obnovovat služby pro zachování kontinuity provozu.
+	\end{enumerate}
+
+	\subsection{Výkon - Performance}
+
+	Tato sekce se týká rychlosti a~efektivity systému při zpracování požadavků. 	
+
+	\begin{enumerate}[noitemsep,topsep=0pt]
+    	\item Systém musí zvládnout obsluhovat až 200 současně připojených uživatelů.
+    	\item Doba odezvy systému by měla být maximálně 5~sekund od odeslání signálu.
+		\item Systém musí být schopen efektivně zpracovávat objednávky a~minimalizovat čekací doby uživatelů.
+    	\item Při manipulaci s~databází musí systém efektivně vyhledávat relevantní data a~umožnit načítání dat s~možnosti omezeného rozsahu.  
+	\end{enumerate}
+
+	\subsection{Udržitelnost - Supportability}
+	
+	Tato část se zabývá schopností systému být udržovatelným a~snadno spravovatelným v~dlouhodobém provozu.
+	
+	\begin{enumerate}[noitemsep,topsep=0pt]
+    	\item Klientská aplikace musí být kompatibilní s~různými operačními systémy a~zařízeními (Windows, Linux, Android, iOS).
+		\item Systém musí mít možnost testovat novou funkcionalitu a~opravy chyb v~odděleném testovacím prostředí.
+    	\item Aktualizace a~nové funkcionality by měly být nasazovány pravidelně a~transparentně, aby uživatelé měli přístup k~nejnovějším vylepšením a~opravám chyb.
+    	\item Pro snadnou správu a~údržbu by měl systém nabízet přehledné nástroje pro monitorování výkonu, logování událostí a~správu uživatelů a~dat.
+    \end{enumerate}
+	
+\pagebreak
+
