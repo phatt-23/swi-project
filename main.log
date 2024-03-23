@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.11)  17 MAR 2024 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.18)  23 MAR 2024 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,10 +935,10 @@ enefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
 (./sections/title.tex
 Package epstopdf Info: Source file: <assets/fei-logo.eps>
-(epstopdf)                    date: 2019-02-06 15:48:02
+(epstopdf)                    date: 2024-03-23 10:09:49
 (epstopdf)                    size: 1097558 bytes
 (epstopdf)             Output file: <assets/fei-logo-eps-converted-to.pdf>
-(epstopdf)                    date: 2024-03-16 03:41:00
+(epstopdf)                    date: 2024-03-23 10:09:49
 (epstopdf)                    size: 21531 bytes
 (epstopdf)             Command: <repstopdf --outfile=assets/fei-logo-eps-conver
 ted-to.pdf assets/fei-logo.eps>
@@ -1062,12 +1062,15 @@ ho záºitku, umoº¬ují
  []
 
 ) [12] (./sections/envctxt.tex [13]) (./sections/usecasedia.tex
-<assets/swi-uc-diagram-1.pdf, id=60, 545.1567pt x 655.48888pt>
-File: assets/swi-uc-diagram-1.pdf Graphic file (type pdf)
-<use assets/swi-uc-diagram-1.pdf>
-Package pdftex.def Info: assets/swi-uc-diagram-1.pdf  used on input line 6.
-(pdftex.def)             Requested size: 442.28862pt x 531.82326pt.
-) [14 <./assets/swi-uc-diagram-1.pdf>] (./sections/scenarios.tex
+
+pdfTeX warning: pdflatex (file ./assets/swihphat.drawio.pdf): PDF inclusion: fo
+und PDF version <1.7>, but at most version <1.5> allowed
+<assets/swihphat.drawio.pdf, id=60, 531.90718pt x 639.34856pt>
+File: assets/swihphat.drawio.pdf Graphic file (type pdf)
+<use assets/swihphat.drawio.pdf>
+Package pdftex.def Info: assets/swihphat.drawio.pdf  used on input line 6.
+(pdftex.def)             Requested size: 442.28862pt x 531.65424pt.
+) [14 <./assets/swihphat.drawio.pdf>] (./sections/scenarios.tex
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
 .
 
@@ -1082,22 +1085,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30150 strings out of 478087
- 751825 string characters out of 5842650
+ 30152 strings out of 478087
+ 751839 string characters out of 5842650
  1866388 words of memory out of 6000000
- 49674 multiletter control sequences out of 15000+600000
- 572090 words of font info for 72 fonts, out of 8000000 for 9000
+ 49675 multiletter control sequences out of 15000+600000
+ 575080 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  104i,15n,97p,787b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (17 pages, 299198 bytes).
+ist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on main.pdf (17 pages, 283067 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 77 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

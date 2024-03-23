@@ -1,4 +1,4 @@
-PWD /home/phatt/School/swi/1_1
+PWD /home/phatt/School/swi/1_1/project
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
@@ -1053,11 +1053,12 @@ INPUT ./sections/usecasedia.tex
 INPUT sections/usecasedia.tex
 INPUT ./sections/usecasedia.tex
 INPUT sections/usecasedia.tex
-INPUT ./assets/swi-uc-diagram-1.pdf
-INPUT ./assets/swi-uc-diagram-1.pdf
-INPUT assets/swi-uc-diagram-1.pdf
-INPUT ./assets/swi-uc-diagram-1.pdf
-INPUT ./assets/swi-uc-diagram-1.pdf
+INPUT ./assets/swihphat.drawio.pdf
+INPUT ./assets/swihphat.drawio.pdf
+INPUT assets/swihphat.drawio.pdf
+INPUT ./assets/swihphat.drawio.pdf
+INPUT ./assets/swihphat.drawio.pdf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
 INPUT ./sections/scenarios.tex
 INPUT sections/scenarios.tex
 INPUT ./sections/scenarios.tex
@@ -1071,6 +1072,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb
